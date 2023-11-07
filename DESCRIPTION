@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Bilgecan", "Şen", , "bilgecan.sen@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7393-1805"))
-    person("Christian", "Che-Castaldo", , "cche-castaldo@usgs.gov", role = c("aut", "cre"),
+    person("Christian", "Che-Castaldo", , "checastaldo@wisc.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7670-2178"))
 Description: Functions to calculate permutation entropy and its statistical significance with a randomized permutation test.
 License: MIT + file LICENSE
