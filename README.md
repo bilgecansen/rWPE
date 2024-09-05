@@ -1,7 +1,7 @@
 
 # rWPE
 
-rWPE is a simple pacakge with three functions that can calculate
+rWPE is a simple R package with three functions that can calculate
 permutation entropy (PE) and weighted permutation entropy (WPE) of time
 series and can perform a randomized permutation test, which we also call
 rWPE, to assign significance to the calculated PE and WPE values. PE and
