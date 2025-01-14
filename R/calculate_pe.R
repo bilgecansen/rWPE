@@ -19,7 +19,12 @@ calculate_pe <- function(x, m = 3, tau = 1) {
   eff_m <- (m-1)*(tau-1) + m
 
   if (eff_m >= length(x)) stop("Combination of m and tau is too large for the time series length")
-
+  
+  if (length(unique(x) < length(x))) {
+    idx_dup <- which(duplicated(x))
+    x[idx_dup] <- x[idx_dup] + rnorm(length(idx_dup), 0, 0.00001)
+  }
+  
   np <- length(x) - eff_m + 1
 
   idx_mat <- matrix(seq(1, eff_m, by = tau), ncol = m, nrow = np, byrow = T)
